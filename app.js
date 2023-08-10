@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
-const sequelize = require("./config/config");
+const sequelize = require("./db");
 const commentRoutes = require("./app/routes/commentRoutes");
 
 app.use(express.json());
